@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/4e7bb40584b55a44f4657b188986bff4.css">
+    <script src="/168726dbe96b3ce427e7fedce31bb0bc.js" defer=""></script>
+    <title>Employment and population statistics</title>
+</head>
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div id="right">
+                <div id="logo">Employment and population statistics</div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="map-container">
+            <div id="inputs">
+                <form>
+                    <select id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                    </select>
+                    <select id="data-option">
+                        <option value="employment">Total employment (18-64 years old)</option>
+                        <option value="population">Total population per municipality</option>        
+                    </select>
+                    <div id="checkbox-div">
+                        <label for="show-color" id="show-color-label">Show coloring</label>
+                        <input type="checkbox" id="show-color" checked="">
+                    </div>
+                    <button id="submit">Submit</button>
+                </form>
+                <div id="whole-country">
+                    <button id="whole-country-pop">Show country population chart</button>
+                    <button id="whole-country-emp">Show country employment chart</button>
+                </div>    
+            </div>
+            <div id="map-holder">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="overlay" id="right-container">
+        <div id="overlay-wrapper">
+            <button id="close-chart">Close chart</button>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="footer-wrapper">
+            <p>Made by Joonatan Kallio 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
